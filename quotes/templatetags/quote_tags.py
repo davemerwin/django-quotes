@@ -8,5 +8,7 @@ def show_random_quote():
     """
     For generating a single random quote
     """
-    random_quote = Quote.objects.order_by('?')[0]
-    return {'random_quote': random_quote}
+    try:
+         random_quote = Quote.objects.order_by('?')[0]
+    except ValueError:
+        print "There are no quotes"
