@@ -1,0 +1,15 @@
+{% if random_quote %}
+    <div class="quote">
+        {% if random_quote.content %}
+            <p>{{ random_quote.content }}</p>
+        {% endif %}
+    </div>
+    <div class="quoteMeta">
+        {% if random_quote.author %}
+            <span class="quoteAuthor">{{ random_quote.author }}</span>
+        {% endif %}
+        {% if random_quote.cirq %}
+            <span class="quoteCirq">{{ random_quote.cirq }}</span>
+        {% endif %}
+    </div>
+{% endif %}
