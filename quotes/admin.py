@@ -3,7 +3,7 @@ from django.contrib import admin
 from quotes.models import Quote
 
 class QuoteAdmin(admin.ModelAdmin):
-    list_display = ('slug', 'content')
+    list_display = ('slug', 'quote')
     ordering = ('slug',)
 
-admin.site.register(QuoteContent, QuoteContentAdmin)
+admin.site.register(Quote, QuoteAdmin)
