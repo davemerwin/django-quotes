@@ -1,5 +1,6 @@
 {% if random_quote %}
-    <div class="quote">
+<div class="quote">
+    <div class="quoteCopy">
         {% if random_quote.quote %}
             <p>{{ random_quote.quote }}</p>
         {% endif %}
@@ -8,8 +9,9 @@
         {% if random_quote.author %}
             <span class="quoteAuthor">{{ random_quote.author }}</span>
         {% endif %}
-        {% if random_quote.cirq %}
-            <span class="quoteCirq">{{ random_quote.cirq }}</span>
+        {% if random_quote.circa %}
+            <span class="quoteCirca">{{ random_quote.circa }}</span>
         {% endif %}
     </div>
+</div>
 {% endif %}
